@@ -3,10 +3,10 @@ import { Client } from 'pg';
 export default async () => {
   const client = new Client({
     user: 'postgres',
-    password: 'postgres',
-    host: 'localhost',
+    password: 'admin',
+    host: '127.0.0.1',
     port: '5432',
-    database: 'demo_2025',
+    database: 'postgres',
   });
 
   await client.connect();
